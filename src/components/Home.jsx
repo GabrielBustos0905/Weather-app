@@ -38,7 +38,7 @@ const Home = () => {
     }
 
     return (
-        <div className="h-screen w-full bg-gradient-to-b from-slate-300 to-slate-600">
+        <div className="h-full w-full bg-gradient-to-b from-slate-300 to-slate-600">
             <Navbar onSearch={onSearch}/>
             <Cards cities={cities} onClose={onClose}/>
         </div>

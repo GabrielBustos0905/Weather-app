@@ -9,7 +9,8 @@ const SearchBar = ({ onSearch }) => {
                 className="px-4"
                 onSubmit={(e) => {
                         e.preventDefault();
-                        onSearch(city)
+                        onSearch(city);
+                        setCity("")
                     }
                 }
             >
@@ -19,9 +20,9 @@ const SearchBar = ({ onSearch }) => {
                     placeholder="Search City"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
-                    className="mx-4 p-2 gap-8"
+                    className="mx-4 p-2 gap-8 text-black bg-gray-800"
                 />
-                <input type="submit" value="Add"/>
+                <input type="submit" value="Add" className=""/>
             </form>
         </div>
     )
