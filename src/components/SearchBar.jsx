@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import search from "../assets/search.png"
 
 const SearchBar = ({ onSearch }) => {
     const [city, setCity] = useState("");
@@ -6,7 +7,7 @@ const SearchBar = ({ onSearch }) => {
     return (
         <div className="flex items-center justify-center">
             <form
-                className="px-4"
+                className="px-4 flex flex-row"
                 onSubmit={(e) => {
                         e.preventDefault();
                         onSearch(city);
@@ -20,9 +21,9 @@ const SearchBar = ({ onSearch }) => {
                     placeholder="Search City"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
-                    className="mx-4 p-2 gap-8 text-black bg-gray-800"
+                    className="mx-4 p-2 gap-8 text-white bg-gray-800"
                 />
-                <input type="submit" value="Add" className=""/>
+                <button><img src={search} className="w-8 h-8 hover:scale-110 duration-300"/></button>
             </form>
         </div>
     )

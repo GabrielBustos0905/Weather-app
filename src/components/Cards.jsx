@@ -15,6 +15,7 @@ const Cards = ({ cities, onClose }) => {
                                 min={c.min}
                                 name={c.name}
                                 img={c.img}
+                                onClose={() => onClose(c.id)}
                                 id={c.id}
                             /> )
                         }
