@@ -4,7 +4,7 @@ import Card from "./Card";
 const Cards = ({ cities, onClose }) => {
 
     return (
-        <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-screen" >
+        <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full" >
             {
                 cities.length ? (
                     <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">

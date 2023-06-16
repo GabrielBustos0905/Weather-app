@@ -38,9 +38,11 @@ const Home = () => {
     }
 
     return (
-        <div className="h-full w-full bg-gradient-to-b from-slate-300 to-slate-600">
+        <div className="h-screen w-full bg-gradient-to-b from-slate-500 to-white">
             <Navbar onSearch={onSearch}/>
-            <Cards cities={cities} onClose={onClose}/>
+            <div>
+                <Cards cities={cities} onClose={onClose}/>
+            </div>
         </div>
     )
 };
